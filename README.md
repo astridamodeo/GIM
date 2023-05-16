@@ -16,7 +16,7 @@ Esercizi di Grafica in movimento 2023
 [dittico 2](Esercizio_1B/template/indexD.html)  
 
 ## Esercizio 2a
-[forma e senso](Esercizio_2A/template/index.html)
+[forma e senso](Esercizio_2A/template/index.html) 
 
 ## Esercizio 2b
 [forma e senso animato](Esercizio_2B/index.html)
