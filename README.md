@@ -19,7 +19,7 @@ Esercizi di Grafica in movimento 2023
 [forma e senso](Esercizio_2A/template/index.html)
 
 ## Esercizio 2b
-[forma e senso animato](Esercizio/2B/index.html)
+[forma e senso animato](Esercizio_2B/index.html)
 
 ## Esercizio 3
 [pong](Esercizio_3/esempi/2_pong/index.html)  
