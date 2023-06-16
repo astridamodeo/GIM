@@ -29,5 +29,5 @@ Esercizi di Grafica in movimento 2023
 
 ## Esercizio 4
 [orologio prova](Esercizio_4/esempi/1_orologio/index.html)  
-[orologio prova](Esercizio_4/esempi/2_orologio/index.html)  
+[orologio](Esercizio_4/esempi/2_orologio/index.html)  
 
