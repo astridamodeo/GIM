@@ -24,5 +24,10 @@ Esercizi di Grafica in movimento 2023
 ## Esercizio 3
 [pong](Esercizio_3/esempi/2_pong/index.html)  
 [pioggia](Esercizio_3/esempi/3_pioggia/index.html)  
+[neve](Esercizio_3/esempi/4_neve/index.html)  
+
 
 ## Esercizio 4
+[orologio prova](Esercizio_4/esempi/1_orologio/index.html)  
+[orologio prova](Esercizio_4/esempi/2_orologio/index.html)  
+
