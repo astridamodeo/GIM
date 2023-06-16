@@ -30,4 +30,5 @@ Esercizi di Grafica in movimento 2023
 ## Esercizio 4
 [orologio prova](Esercizio_4/esempi/1_orologio/index.html)  
 [orologio](Esercizio_4/esempi/2_orologio/index.html)  
+L'idea di questo orologio si rifà al concetto di tempo come loop infinito. Per questo motivo ho realizzato tre spirali le quali rappresentano tre unità di tempo (secondi, minuti e ore). L'orologio si muove seguendo il tempo reale ma essendo il concetto di infinità temporale è come essere dentro ad un loop in cui non è possibile riconoscere l'orario preciso, ma solo visualizzare il tempo che passa.
 
