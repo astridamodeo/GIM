@@ -1,22 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Disegno (p5js)</title>
-	<style>
-		body {
-			background-color: lightgray;
-			margin: 0;
-			padding: 0px;
-		}
-		canvas {
-			display: block;
-		}
-	</style>
+  <title>Neve</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    canvas {
+      background-color: #000;
+    }
+  </style>
 </head>
 <body>
-	<script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
-	<script src="sketch.js"></script>
+  <canvas id="snow-canvas"></canvas>
+
+  <script>
+    // Otteniamo il riferimento all'elemento canvas
+    const canvas = document.getElementById('snow-canvas');
+    const ctx = canvas.getContext('2d');
+
+    // Impostiamo la dimensione del canvas
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    // Definiamo un array per memorizzare i pallini di neve
+    const flakes = [];
+
+    // Funzione per creare un nuovo pallino di neve
+    function createFlake() {
+      const flake = {
+        x: Math.random() * canvas.width,    // Posizione iniziale x casuale
+        y: 0,                               // Inizia dall'alto
+        size: Math.random() * 2 + 1,         // Dimensione casuale
+        speedY: Math.random() * 2 + 1,       // Velocità verticale casuale
+        speedX: Math.random() * 0.5 - 0.25,  // Velocità orizzontale casuale
+        opacity: Math.random() * 0.5 + 0.5   // Opacità casuale
+      };
+
+      flakes.push(flake);
+    }
+
+    // Funzione per disegnare i pallini di neve
+    function drawFlakes() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height); // Puliamo il canvas
+
+      ctx.fillStyle = '#ffffff';  // Colore dei pallini di neve
+
+      flakes.forEach(flake => {
+        ctx.beginPath();
+        ctx.arc(flake.x, flake.y, flake.size, 0, Math.PI * 2);
+        ctx.closePath();
+
+        ctx.globalAlpha = flake.opacity;
+        ctx.fill();
+
+        flake.y += flake.speedY;  // Aggiorniamo la posizione verticale del pallino di neve
+        flake.x += flake.speedX;  // Aggiorniamo la posizione orizzontale del pallino di neve
+
+        // Se il pallino di neve è caduto fuori dal canvas, lo rimuoviamo dall'array
+        if (flake.y > canvas.height || flake.x > canvas.width || flake.x < 0) {
+          const flakeIndex = flakes.indexOf(flake);
+          flakes.splice(flakeIndex, 1);
+        }
+      });
+
+      requestAnimationFrame(drawFlakes);  // Chiamiamo la funzione di disegno in modo ricorsivo
+    }
+
+    // Funzione per inizializzare l'animazione
+    function startSnow() {
+      setInterval(createFlake, 50);  // Creiamo un nuovo pallino di neve ogni 50 millisecondi
+      drawFlakes();  // Avviamo l'animazione
+    }
+
+    // Inizializziamo l'animazione quando la pagina è completamente caricata
+    window.addEventListener('load', startSnow);
+  </script>
 </body>
 </html>
