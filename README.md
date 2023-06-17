@@ -14,7 +14,8 @@ Esercizi di Grafica in movimento 2023
 ## Esercizio 1b
 [dittico 1](Esercizio_1B/template/indexC.html)  
 [dittico 2](Esercizio_1B/template/indexD.html)  
-
+[dittico 3](Esercizio_1B/template/indexA.html)  
+[dittico 3](Esercizio_1B/template/indexB.html)  
 ## Esercizio 2a
 [forma e senso](Esercizio_2A/template/index.html) 
 
@@ -24,11 +25,11 @@ Esercizi di Grafica in movimento 2023
 ## Esercizio 3
 [pong](Esercizio_3/esempi/2_pong/index.html)  
 [pioggia](Esercizio_3/esempi/3_pioggia/index.html)  
-[neve](Esercizio_3/esempi/4_neve/index.html)  
+[neve](Esercizio_3/esempi/4_neve/index.html)    
 
 
 ## Esercizio 4
-[orologio prova](Esercizio_4/esempi/1_orologio/index.html)  
-[orologio](Esercizio_4/esempi/2_orologio/index.html)  
+[orologio prova](Esercizio_4/1_orologio/index.html)  
+[orologio](Esercizio_4/2_orologio/index.html)  
 L'idea di questo orologio si rifà al concetto di tempo come loop infinito. Per questo motivo ho realizzato tre spirali le quali rappresentano tre unità di tempo (secondi, minuti e ore). L'orologio si muove seguendo il tempo reale ma essendo il concetto di infinità temporale è come essere dentro ad un loop in cui non è possibile riconoscere l'orario preciso, ma solo visualizzare il tempo che passa.
 
